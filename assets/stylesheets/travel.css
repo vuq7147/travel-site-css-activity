@@ -3,7 +3,9 @@ Set the box sizing for every element on the page
 to border-box. Elements should have padding and 
 border included in the element's total width and height
 */
-
+* {
+  box-sizing: border-box;
+}
 
 /*
 Set some common styles for the body of the page
@@ -12,23 +14,34 @@ Set some common styles for the body of the page
  - font to helvetica
  - font size to 16px
 */
-
+body {
+  background-color: black;
+  color: white;
+  font-family: Helvetica;
+  font-size: 16px
+}
 
 /*
 override our h1 style to have a font size of 32px
 */
-
+h1 {
+font-size: 32px;
+}
 
 
 /*
 override our h2 style to have a font size of 28px
 */
-
+h2 {
+  font-size: 28px;
+}
 
 /*
 style the element with the id of header-statement to have centered text
 */
-
+#header-statement {
+  text-align:center;
+}
 
 
 /*
@@ -38,7 +51,13 @@ style the elements with a class of page-row
  - give the element a padding of 5%
  - give the element a margin of 2% on the top and bottom
 */
-
+.page-row {
+  width:100;
+  clear:both;
+  padding:5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
 
 /*
@@ -54,7 +73,18 @@ style the elements with a class of card
  - set the background size to contain //Scale the image to the largest size such that both its width and its height can fit inside the content area
  - set the background to not repeat
 */
-
+.card {
+  width: 20%;
+  height: 300px;
+  margin: 2.5%;
+  padding-top: 15%;
+  float: left;
+  background-color: white;
+  text-align: center;
+  color: black;
+  background-size: contain;
+  background: no-repeat;
+}
 
  
 /*
